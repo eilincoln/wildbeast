@@ -31,8 +31,11 @@ img {
   ;
 }
 
+
+/*HEADER*/
 .header {
   grid-area: header;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
 }
 
 .sidenav {

@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100px;
+}
+
 /* GRID */
 
 .estrutura {
@@ -47,7 +51,7 @@ a {
   flex-wrap: wrap;
 }
 
-.header a {
+.header ul li a {
   display: block;
   padding: 10px;
   color: white;
@@ -57,7 +61,7 @@ a {
   transition: 0.1s;
 }
 
-.header a:hover {
+.header ul li a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -65,15 +69,33 @@ a {
   margin-left: 30px;
 }
 
-
-
-
-
-
-
+/*SIDENAV*/
 .sidenav {
   grid-area: sidenav;
+  background: #fafbfc;
+  padding: 30px;
 }
+
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: 0.1s ease-out;
+}
+
+.sidenav li a:hover {
+  background-color: #b07dfb;
+}
+
+
+
+
+
 
 .content {
   grid-area:  content;
